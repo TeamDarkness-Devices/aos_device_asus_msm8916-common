@@ -108,3 +108,6 @@ sys.uart.enable=0
 # WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
+
+# Team Darkness
+ro.aos.maintainer=Mrinal Ghosh(mg712702)
