@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
     libgenlock \
     memtrack.msm8916
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    ZukDoze
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
