@@ -280,6 +280,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/thermal-engine-8939-ze600kl.conf:system/etc/thermal-engine-8939-ze600kl.conf \
     $(LOCAL_PATH)/thermal/thermal-engine-8939-ze601kl.conf:system/etc/thermal-engine-8939-ze601kl.conf
 
+# USB debugging at boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
